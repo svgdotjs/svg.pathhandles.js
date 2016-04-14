@@ -164,13 +164,8 @@
 
   })
 
-  SVG.Element.prototype.selectize.defaults = {
-    points: true,                            // If true, points at the edges are drawn. Needed for resize!
-    classRect: 'svg_select_boundingRect',    // Css-class added to the rect
-    classPoints: 'svg_select_points',        // Css-class added to the points
-    radius: 7,                               // radius of the points
-    rotationPoint: true,                     // If true, rotation point is drawn. Needed for rotation!
-    deepSelect: false                        // If true, moving of single points is possible (only line, polyline, polyon)
+  SVG.Path.prototype.handles.defaults = {
+
   }
 
 })(SVG)
