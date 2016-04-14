@@ -1,0 +1,27 @@
+{
+  "name": "svg.pathhandles.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Fuzzyma/svg.pathhandles.js",
+  "authors": [
+    "Ulrich-Matthias Schäfer"
+  ],
+  "description": "Add handles to svg path as known in svg programs like incscape",
+  "main": [
+    "./dist/svg.pathhandles.js"
+  ],
+  "keywords": [
+    "svg.js",
+    "path"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "svg.js":"^2.3.0"
+  }
+}
