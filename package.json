@@ -1,6 +1,6 @@
 {
   "name": "svg.pathhandles.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add handles to svg path as known in svg programs like incscape",
   "keywords": [
     "svg.js",
