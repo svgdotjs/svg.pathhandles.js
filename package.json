@@ -1,5 +1,5 @@
 {
-  "name": "svg.pathhandles.js",
+  "name": "@svgdotjs/svg.pathhandles.js",
   "version": "0.0.2",
   "description": "Add handles to svg path as known in svg programs like inkscape",
   "type": "module",
@@ -54,6 +54,7 @@
     "fix": "oxfmt --write . && oxlint -D correctness --fix .",
     "lint": "oxfmt --check . && oxlint -D correctness .",
     "prepublishOnly": "rm -rf ./dist && pnpm build && pnpm zip",
+    "test": "node --test test/*.test.js",
     "zip": "zip -j dist/svg.pathhandles.js.zip -- LICENSE README.md dist/svg.pathhandles.js"
   },
   "peerDependencies": {
@@ -61,9 +62,11 @@
     "@svgdotjs/svg.draggable.js": "^3.0.6"
   },
   "devDependencies": {
+    "@svgdotjs/svg.draggable.js": "^3.0.6",
     "@svgdotjs/svg.js": "^3.2.8",
     "oxfmt": "^0.67.0",
     "oxlint": "^1.82.0",
+    "svgdom": "^0.1.28",
     "typescript": "^7.0.2",
     "vite": "^8.2.2"
   }

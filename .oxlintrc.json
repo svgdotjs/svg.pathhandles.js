@@ -4,9 +4,6 @@
     "browser": true,
     "es2024": true
   },
-  "globals": {
-    "SVG": "writable"
-  },
   "ignorePatterns": ["dist"],
   "rules": {
     "no-unused-expressions": "off",
@@ -23,13 +20,6 @@
     ]
   },
   "overrides": [
-    {
-      "files": ["src/**"],
-      "rules": {
-        "no-shadow-restricted-names": "off",
-        "no-empty": "off"
-      }
-    },
     {
       "files": ["test/**", "demo/**"],
       "env": {
