@@ -1,40 +1,72 @@
 {
-  "name": "svg.pathhandles.js",
-  "version": "0.0.2",
-  "description": "Add handles to svg path as known in svg programs like incscape",
+  "name": "@svgdotjs/svg.pathhandles.js",
+  "version": "3.0.0",
+  "description": "Add handles to svg path as known in svg programs like inkscape",
+  "type": "module",
+  "main": "dist/svg.pathhandles.js",
+  "module": "src/svg.pathhandles.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./svg.pathhandles.js.d.ts",
+        "default": "./src/svg.pathhandles.js"
+      },
+      "require": {
+        "types": "./svg.pathhandles.js.d.cts",
+        "default": "./src/svg.pathhandles.js"
+      },
+      "browser": {
+        "types": "./svg.pathhandles.js.d.ts",
+        "default": "./src/svg.pathhandles.js"
+      }
+    }
+  },
+  "unpkg": "dist/svg.pathhandles.js",
+  "jsdelivr": "dist/svg.pathhandles.js",
+  "files": [
+    "/dist",
+    "/src",
+    "/svg.pathhandles.js.d.ts",
+    "/svg.pathhandles.js.d.cts"
+  ],
   "keywords": [
     "svg.js",
     "path"
   ],
-  "bugs": "https://github.com/Fuzzyma/svg.pathhandles.js/issues",
+  "bugs": "https://github.com/svgdotjs/svg.pathhandles.js/issues",
   "license": "MIT",
+  "typings": "./svg.pathhandles.js.d.ts",
   "author": {
     "name": "Ulrich-Matthias Schäfer"
   },
   "contributors": {
     "name": "Ulrich-Matthias Schäfer"
   },
-  "homepage": "https://github.com/Fuzzyma/svg.pathhandles.js",
-  "files": [
-    "dist/"
-  ],
+  "homepage": "https://github.com/svgdotjs/svg.pathhandles.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Fuzzyma/svg.pathhandles.js.git"
+    "url": "git+https://github.com/svgdotjs/svg.pathhandles.js.git"
   },
-  "engines": {
-    "node": ">= 0.8.0"
+  "scripts": {
+    "build": "npm run fix && vite build",
+    "fix": "npx eslint --fix .",
+    "lint": "npx eslint .",
+    "prepublishOnly": "rm -rf ./dist && npm run build",
+    "test": "node --test spec/svg.pathhandles.test.mjs"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-clean": "~0.4.0",
-    "grunt-contrib-copy": "^0.7.0",
-    "grunt": "~0.4.5",
-    "grunt-bumper": "^1.0.4"
+    "@svgdotjs/svg.draggable.js": "^3.0.6",
+    "@svgdotjs/svg.js": "^3.2.8",
+    "eslint": "^8.36.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.5",
+    "svgdom": "0.0.21",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1"
   },
-  "dependencies": {
-    "svg.js":"^2.3.0"
+  "peerDependencies": {
+    "@svgdotjs/svg.js": "^3.2.4",
+    "@svgdotjs/svg.draggable.js": "^3.0.6"
   }
 }
