@@ -39,9 +39,11 @@
   "author": {
     "name": "Ulrich-Matthias Schäfer"
   },
-  "contributors": {
-    "name": "Ulrich-Matthias Schäfer"
-  },
+  "contributors": [
+    {
+      "name": "Ulrich-Matthias Schäfer"
+    }
+  ],
   "homepage": "https://github.com/svgdotjs/svg.pathhandles.js",
   "repository": {
     "type": "git",
