@@ -1,6 +1,6 @@
 {
   "name": "@svgdotjs/svg.pathhandles.js",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Add handles to svg path as known in svg programs like inkscape",
   "type": "module",
   "packageManager": "pnpm@11.26.0",
